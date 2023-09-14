@@ -44,7 +44,7 @@ public:
 
 class Solution {
 public:
-    void order(TreeNode* root, vector<vector<int>> &res, int depth) {
+    void order(TreeNode* root, vector<vector<int>>& res, int depth) {
         if (root == nullptr) {
             return;
         }

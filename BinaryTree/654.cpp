@@ -16,7 +16,7 @@ struct TreeNode {
 
 class Solution1 {
 public:
-    TreeNode* constructMaximumBinaryTree(vector<int> &nums) {
+    TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
         if (nums.size() == 0) {
             return nullptr;
         }
@@ -47,7 +47,7 @@ public:
 
 class Solution {
 public:
-    TreeNode* traversal(vector<int> &nums, int start, int end) {
+    TreeNode* traversal(vector<int>& nums, int start, int end) {
         if (start == end) {
             return nullptr;
         }
@@ -76,7 +76,7 @@ public:
         return root;
     }
 
-    TreeNode* constructMaximumBinaryTree(vector<int> &nums) {
+    TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
         if (nums.size() == 0) {
             return nullptr;
         }

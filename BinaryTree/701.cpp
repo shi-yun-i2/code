@@ -88,7 +88,7 @@ public:
             root = new TreeNode(val);
             return root;
         }
-        traversal(root,val);
+        traversal(root, val);
         return root;
     }
 };

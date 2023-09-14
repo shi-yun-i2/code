@@ -16,7 +16,7 @@ struct TreeNode {
 
 class Solution1 {
 public:
-    TreeNode* buildTree(vector<int> &inorder, vector<int> &postorder) {
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
         if (postorder.size() == 0) {
             return nullptr;
         }
@@ -47,7 +47,7 @@ public:
 
 class Solution {
 public:
-    TreeNode* traversal(vector<int> &inorder, int inorderBegin, int inorderEnd, vector<int> &postorder,
+    TreeNode* traversal(vector<int>& inorder, int inorderBegin, int inorderEnd, vector<int>& postorder,
                         int postorderBegin, int postorderEnd) {
         if (postorderBegin == postorderEnd) {
             return nullptr;
@@ -75,12 +75,14 @@ public:
         int rightPostorderBegin = postorderBegin + (leftInorderEnd - leftInorderBegin);
         int rightPostorderEnd = postorderEnd - 1;
 
-        root->left = traversal(inorder,leftInorderBegin,leftInorderEnd,postorder,leftPostorderBegin,leftPostorderEnd);
-        root->right = traversal(inorder,rightInorderBegin,rightInorderEnd,postorder,rightPostorderBegin,rightPostorderEnd);
+        root->left = traversal(inorder, leftInorderBegin, leftInorderEnd, postorder, leftPostorderBegin,
+                               leftPostorderEnd);
+        root->right = traversal(inorder, rightInorderBegin, rightInorderEnd, postorder, rightPostorderBegin,
+                                rightPostorderEnd);
         return root;
     }
 
-    TreeNode* buildTree(vector<int> &inorder, vector<int> &postorder) {
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
         if (postorder.size() == 0) {
             return nullptr;
         }

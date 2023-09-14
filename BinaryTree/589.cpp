@@ -31,7 +31,7 @@ public:
             Node* node = st.top();
             st.pop();
             res.push_back(node->val);
-            for (int i = node->children.size() - 1;i >= 0;i--) {
+            for (int i = node->children.size() - 1; i >= 0; i--) {
                 st.push(node->children[i]);
             }
         }

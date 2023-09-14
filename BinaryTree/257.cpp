@@ -16,7 +16,7 @@ struct TreeNode {
 
 class Solution1 {
 public:
-    void traverse(TreeNode* root, vector<int> &path, vector<string> &result) {
+    void traverse(TreeNode* root, vector<int>& path, vector<string>& result) {
         path.push_back(root->val);
         if (root->left == nullptr && root->right == nullptr) {
             string s;
@@ -84,7 +84,7 @@ public:
 
 class Solution3 {
 public:
-    void traverse(TreeNode* root, string path, vector<string> &res) {
+    void traverse(TreeNode* root, string path, vector<string>& res) {
         path += to_string(root->val);
         if (root->left == nullptr && root->right == nullptr) {
             res.push_back(path);
@@ -110,7 +110,7 @@ public:
 
 class Solution {
 public:
-    void traverse(TreeNode* root, string path, vector<string> &res) {
+    void traverse(TreeNode* root, string path, vector<string>& res) {
         path += to_string(root->val);
         if (root->left == nullptr && root->right == nullptr) {
             res.push_back(path);

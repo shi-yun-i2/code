@@ -4,6 +4,7 @@
     <inspection_tool class="ClangTidy" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="OCUnusedGlobalDeclaration" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="OCUnusedStruct" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="SignednessMismatch" enabled="true" level="INFORMATION" enabled_by_default="true" />
     <inspection_tool class="ValueMayNotFitIntoReceiver" enabled="true" level="INFORMATION" enabled_by_default="true" />
   </profile>
 </component>

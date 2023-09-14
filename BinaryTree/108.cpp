@@ -17,7 +17,7 @@ struct TreeNode {
 
 class Solution1 {
 public:
-    TreeNode* buildTree(vector<int> &nums, int begin, int end) {
+    TreeNode* buildTree(vector<int>& nums, int begin, int end) {
         if (begin > end) {
             return nullptr;
         }
@@ -31,7 +31,7 @@ public:
         return root;
     }
 
-    TreeNode* sortedArrayToBST(vector<int> &nums) {
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
         if (nums.size() == 0) {
             return nullptr;
         }
@@ -42,7 +42,7 @@ public:
 
 class Solution {
 public:
-    TreeNode* sortedArrayToBST(vector<int> &nums) {
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
         if (nums.size() == 0) {
             return nullptr;
         }

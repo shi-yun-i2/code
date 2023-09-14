@@ -35,7 +35,7 @@ public:
                 st.push(node->children[i]);
             }
         }
-        reverse(res.begin(),res.end());
+        reverse(res.begin(), res.end());
         return res;
     }
 };

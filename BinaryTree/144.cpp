@@ -16,7 +16,7 @@ struct TreeNode {
 
 class Solution1 {
 public:
-    void preorder(TreeNode* root, vector<int> &res) {
+    void preorder(TreeNode* root, vector<int>& res) {
         if (root == nullptr) {
             return;
         }
